@@ -166,9 +166,14 @@ def main():
 
 main()
 
-# osszegzes:
+# kerdesek:
 # fuzzifikacio: a konkret bemeneteket tagsagi ertekekke alakitjuk, hogy kezeljuk a bizonytalansagot
+
 # szabalybazis: emberileg ertelmezheto if-then szabalyok aktivacioja alapjan allitjuk elo a kimeneti halmazokat
+
 # aggregacio: az osszes szabaly hozzajarulasat egyesitjuk (max), hogy egyetlen kimeneti halmazt kapjunk
-# defuzzifikacio: centroid modszert hasznaljuk, mert egyensulyi pontot ad a teljes kimeneti halmazon
-#   a centroid gyakran stabil, es ertelmes numerikus becslest ad a mamdani rendszer kimenetere
+
+# defuzzifikacio: a kimeneti halmazbol egyetlen szamot keszit. centroid modszert hasznaljuk, mert egyensulyi pontot ad a teljes kimeneti halmazon
+
+# centroid modszer: visszaadja a fuzzy halmaz kozepponti erteket
+# a centroid gyakran stabil, es ertelmes numerikus becslest ad a mamdani rendszer kimenetere
