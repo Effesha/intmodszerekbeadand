@@ -121,7 +121,7 @@ def a_star_algorithm(grid, start, goal):
                 heapq.heappush(open_heap, (f, counter, neighbor))
                 counter += 1
 
-    # ha kifogyott a nyílt halmaz és nem találtuk meg a célt
+    # ha kifogyott a nyÃ­lt halmaz Ã©s nem talÃ¡ltuk meg a cÃ©lt
     return None
 
 
@@ -147,3 +147,16 @@ if path:
 else:
     print("Nincs elerheto ut a celhoz.")
 
+# kerdesek:
+# mit jelentenek a g, h, f ertekek: 
+# g: tenyleges ut hossza
+# h: heurisztikus becsles a csucstol a celig
+# f: az A* ertekelo fuggvenye
+
+# miert kell heurisztika: segitsegevel gyorsabban eljuthatunk a celhoz, 
+# igy csokkentve a bejart teruletet -> optimalizacio
+
+# hogyan segit az A* a vak kereseshez kepest: vak esetben BFS/DFS felesleges 
+# vizsgalatokat vagy lassu teljesitmeny eredmenyezhet.
+# Az A* a cel iranyaba tereli a keresest, nem pasztazza az egesz teret, 
+# igy biztositva gyorsabb elerest a celhoz.
