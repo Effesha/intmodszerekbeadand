@@ -130,7 +130,7 @@ def main():
 
 main()
 
-# osszegzes:
+# kerdesek:
 # A futtatas soran megfigyelheto volt, hogy a populacio legjobb es atlagos fitness erteke
 # altalaban javult a generaciok soran, de nem monoton modon: kisebb ingadozasok jelentkeztek,
 # ami a GA sztochasztikus termeszetebol adodik. 
