@@ -160,10 +160,12 @@ def main():
 
 main()
 
-# osszegzes:
-# A prior azt mutatja meg, hogy alapbol mennyire gyakori az influenza. 
-# Ha ritkabb, akkor a posterior is kisebb lesz.
-# Ha a teszt sok hamis pozitiv eredmenyt ad, akkor a pozitiv teszt kevesebbet jelent, 
-# ezert csokken a posterior valoszinuseg.
-# A naive bayes feltetel azt jelenti, hogy a tunetek egymastol fuggetlenek.
-# A modell segit megerteni, hogyan valtozik a betegseg valoszinusege kulonbozo tunetek es teszteredmenyek alapjan.
+# kerdesek:
+# base rate hatas: megadja, mennyire valoszinu a betegseg - mennyire gyakori 
+# a betegseg a populacioban. 
+
+# teszt minosegenek szerepe: a tesztek meghatarozzak, hogy mennyire 
+# megbizhatoak a pozitiv eredmenyek
+
+# felteteles fuggetlenseg jelentese: a tunetek csak a betegseg alapotatol fuggenek,
+# nem egymastol. A tunetek egymastol fuggetlenek
